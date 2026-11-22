@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Date — Enquiry Form | TS Event Planners</title>
+  <meta name="description" content="Book a date with TS Event Planners, Karachi. Tell us the function, the date, the venue and the guest count — or call 0321 4863628 / 0335 9256699." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="forms.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="TS Event Planners home">
+        <span class="brand-mark">TS</span>
+        <span class="brand-text">
+          <span class="brand-name">TS Event Planners</span>
+          <span class="brand-sub">Karachi · Weddings &amp; Corporate</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="book.html" aria-current="page">Book a date</a>
+      </nav>
+      <div class="header-cta">
+        <a class="header-phone" href="tel:+923214863628">0321 4863628</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div>
+        <p class="crumbs"><a href="index.html">Home</a> / Book a date</p>
+        <p class="label">Check your date</p>
+        <h1>Tell us the date and the room</h1>
+        <p>
+          A function, a date, a venue and a rough guest count is enough to start. If you don't have
+          a venue yet, say so — that's usually the first thing we help with.
+        </p>
+      </div>
+      <div class="page-hero-media">
+        <img src="images/gate.jpg" alt="Floral arch and drapes set up for a ceremony" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="book-grid">
+        <div class="form-panel reveal">
+          <h2>Event enquiry</h2>
+          <p>Fill this in to organise the brief before you call, or call directly and we'll take it down over the phone.</p>
+
+          <div class="form-note">
+            <span aria-hidden="true">●</span>
+            <span>
+              <strong>This form doesn't send anything yet</strong>
+              It's here to help you put the brief together. To actually book, call
+              <a href="tel:+923214863628">0321 4863628</a> or WhatsApp
+              <a href="https://wa.me/923214863628">the same number</a>.
+            </span>
+          </div>
+
+          <form data-demo-form novalidate>
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" placeholder="First and last" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone / WhatsApp</label>
+                <input id="phone" name="phone" type="tel" placeholder="03xx xxxxxxx" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="type">Function</label>
+                <select id="type" name="type">
+                  <option>Wedding — mehndi</option>
+                  <option>Wedding — nikkah</option>
+                  <option>Wedding — valima</option>
+                  <option>Wedding — all three functions</option>
+                  <option>Engagement / birthday / anniversary</option>
+                  <option>Corporate conference or AGM</option>
+                  <option>Product launch</option>
+                  <option>Award night / annual dinner</option>
+                  <option>Government or institutional event</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="date">Event date</label>
+                <input id="date" name="date" type="date" />
+              </div>
+              <div class="field">
+                <label for="guests">Guests</label>
+                <input id="guests" name="guests" type="number" min="10" step="10" placeholder="e.g. 300" />
+              </div>
+              <div class="field field--full">
+                <label for="venue">Venue or area</label>
+                <input id="venue" name="venue" type="text" placeholder="Venue name, or the area you're considering" />
+                <span class="hint">No venue booked yet? Write "not decided".</span>
+              </div>
+              <div class="field field--full">
+                <label>What do you need from us?</label>
+                <div class="check-row">
+                  <label class="check"><input type="checkbox" name="need" value="venue" /> Venue</label>
+                  <label class="check"><input type="checkbox" name="need" value="decor" /> Décor &amp; stage</label>
+                  <label class="check"><input type="checkbox" name="need" value="catering" /> Catering</label>
+                  <label class="check"><input type="checkbox" name="need" value="guests" /> Guest management</label>
+                  <label class="check"><input type="checkbox" name="need" value="coordination" /> Day-of coordination</label>
+                  <label class="check"><input type="checkbox" name="need" value="all" /> The full plan</label>
+                </div>
+              </div>
+              <div class="field field--full">
+                <label for="notes">Anything else</label>
+                <textarea id="notes" name="notes" placeholder="Colours you like, a menu idea, a family tradition, a budget range — anything that helps."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Send enquiry</button>
+              <button class="btn btn--ghost" type="button" data-reset>Clear</button>
+              <small>Preview only — nothing is transmitted.</small>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="book-side reveal">
+          <div class="call-card">
+            <h3>Faster to just call</h3>
+            <p>Dates are held on a first-come basis, so a call is the quickest way to check one.</p>
+            <a class="big-phone" href="tel:+923214863628">0321 4863628</a>
+            <a class="big-phone" href="tel:+923359256699">0335 9256699</a>
+            <p style="margin-bottom:0"><a href="https://wa.me/923214863628">WhatsApp us</a> if you'd rather type.</p>
+          </div>
+
+          <div class="info">
+            <dl>
+              <div><dt>Studio</dt><dd>Zulfiqar Commercial Street 4,<br />DHA Phase 8, Karachi</dd></div>
+              <div><dt>Hours</dt><dd>Mon–Thu 1pm–8pm<br />Friday closed<br />Sat–Sun 1pm–8pm</dd></div>
+              <div><dt>Social</dt><dd><a href="https://www.facebook.com/tseventplanners" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/tseventplanners" target="_blank" rel="noopener">Instagram</a></dd></div>
+            </dl>
+          </div>
+
+          <div class="info">
+            <h4 style="margin-bottom:.7rem">What happens after you call</h4>
+            <ul class="tick-list" style="margin-top:0">
+              <li>We check the date and whether the room is free.</li>
+              <li>You get a shortlist of venues and a décor direction.</li>
+              <li>A line-by-line quote, so you can cut what you don't need.</li>
+              <li>Nothing is booked until you approve it.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">TS Event Planners</p>
+          <p>Weddings, corporate functions and private celebrations across Karachi — venue, décor, catering and coordination from the first brief to load-out.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+923214863628">0321 4863628</a></li>
+            <li><a href="tel:+923359256699">0335 9256699</a></li>
+            <li>Zulfiqar Commercial Street 4,<br />DHA Phase 8, Karachi</li>
+            <li><a href="https://www.facebook.com/tseventplanners" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.instagram.com/tseventplanners" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer-list">
+            <li><a href="weddings.html">Weddings</a></li>
+            <li><a href="corporate.html">Corporate</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="book.html">Book a date</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> TS Event Planners · Karachi</span>
+        <span>Venue · Décor · Catering</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="forms.js"></script>
+</body>
+</html>

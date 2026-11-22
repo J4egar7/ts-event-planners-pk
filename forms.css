@@ -1,0 +1,64 @@
+/* TS Event Planners — enquiry form (demo, nothing is transmitted) */
+
+.book-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.8rem,4vw,3rem);align-items:start}
+.form-panel{background:var(--paper);border:1px solid var(--line-soft);padding:clamp(1.6rem,3vw,2.5rem)}
+.form-panel h2{font-size:clamp(1.5rem,2.6vw,2.05rem)}
+.form-note{
+  display:grid;grid-template-columns:auto 1fr;gap:.85rem;
+  border-left:2px solid var(--marigold);background:rgba(212,116,31,.07);
+  padding:.95rem 1.1rem;margin:1.1rem 0 1.7rem;font-size:.9rem;color:#4f3f46;
+}
+.form-note strong{
+  display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--marigold);margin-bottom:.3rem;font-weight:500;
+}
+.form-note a{color:var(--rose);border-bottom:1px solid rgba(166,58,85,.4)}
+
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.05rem}
+.field{display:flex;flex-direction:column;gap:.4rem}
+.field--full{grid-column:1/-1}
+.field label{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);
+}
+.field input,.field select,.field textarea{
+  width:100%;background:var(--cream);border:1px solid var(--line);
+  color:var(--ink);font-family:var(--body);font-size:.97rem;
+  padding:.78rem .85rem;border-radius:0;
+  transition:border-color .18s ease,background .18s ease;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--rose);background:#fff;
+}
+.field textarea{min-height:112px;resize:vertical}
+.field select{
+  appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,#7d6b72 50%),linear-gradient(135deg,#7d6b72 50%,transparent 50%);
+  background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat;
+}
+.field .hint{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;color:var(--muted)}
+.check-row{display:flex;flex-wrap:wrap;gap:.5rem}
+.check{
+  display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--line);
+  padding:.52rem .75rem;font-size:.78rem;color:#5d4c54;cursor:pointer;
+  transition:border-color .15s ease,color .15s ease;
+}
+.check:hover{border-color:var(--rose);color:var(--rose)}
+.check input{width:auto;accent-color:var(--rose);margin:0}
+.form-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin-top:1.6rem}
+.form-actions small{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;color:var(--muted);line-height:1.7}
+.form-status{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--rose);margin:.9rem 0 0;min-height:1.2em}
+
+.book-side{display:grid;gap:1.1rem}
+.call-card{background:var(--plum);color:var(--cream);padding:1.7rem}
+.call-card h3{color:var(--cream);margin-bottom:.5rem}
+.call-card p{font-size:.93rem;color:#d3c1c6}
+.call-card a{color:var(--cream);border-bottom:1px solid rgba(212,116,31,.7)}
+.call-card .big-phone{
+  display:block;font-family:var(--display);font-size:clamp(1.35rem,2.3vw,1.7rem);
+  color:var(--cream);border:0;margin:.15rem 0 .7rem;
+}
+.call-card .big-phone:hover{color:var(--marigold)}
+
+@media (max-width:960px){.book-grid{grid-template-columns:1fr}}
+@media (max-width:540px){.field-grid{grid-template-columns:1fr}}
